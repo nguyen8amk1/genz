@@ -1,0 +1,33 @@
+{
+    "frontend": {
+        "path": "", 
+        "nginx-conf": "", 
+
+        "dev-dockerfile": "", 
+        "prod-dockerfile": "", 
+        "dev__image_tag_name":"nguyen8a/dev-nalendar-app:latest",
+        "dev__container_name": "dev_nalendar_app_container", 
+        "dev__host_port": "3000",
+        "dev__container_port": "3000",
+        "dev__workdir": "app", 
+
+        "prod__image_tag_name": "nguyen8a/nalendar-app:latest"
+
+    },
+    "backend": {
+        "path": "", 
+        "dev-dockerfile": "", 
+        "prod-dockerfile": "", 
+
+        "dev__image_tag_name":"nguyen8a/dev-nalendar-api:latest",
+        "dev__container_name": "dev_nalendar_api_container", 
+        "dev__host_port": "5000",
+        "dev__container_port": "8000",
+        "dev__workdir": "api",
+
+        "prod__image_tag_name": "nguyen8a/nalendar-api:latest"
+    },
+    "database": {
+    }
+}
+
