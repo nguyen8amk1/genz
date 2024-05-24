@@ -1,7 +1,8 @@
 #!/bin/bash
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Fixed configuration file name
-CONFIG_FILE="./tool-config.json"
+CONFIG_FILE="$SCRIPT_DIR/tool-config.json"
 
 # Check if jq is installed
 if ! command -v jq &>/dev/null; then

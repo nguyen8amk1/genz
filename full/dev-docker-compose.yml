@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  # api:
+  #   image: nguyen8a/dev-nalendar-api
+  #   container_name: api_container
+  #   ports:
+  #     - '8000:8000'
+  #
+  #   # volumes:
+  #   #   - ./server:/api
+  #   #   - /api/node_modules
+
+
+  app: 
+    image: nguyen8a/dev-nalendar-app
+    container_name: app_container
+
+    environment: 
+      - REACT_APP_API_URL=http://localhost:8000
+    ports:
+      - '3000:3000'
+
+    volumes:
+      - ./client/src:/app/src
+      - /app/node_modules
+
+    stdin_open: true
+    tty: true
+
+    # # docker-compose -f local-docker-compose.yml up

@@ -5,5 +5,5 @@
 	"dev__container_port": "3000",
 	"dev__workdir": "app", 
 
-    "prod__image_tag_name": "nguyen8a/nanlendar-app:latest"
+    "prod__image_tag_name": "nguyen8a/nalendar-app:latest"
 }

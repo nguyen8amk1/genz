@@ -7,7 +7,7 @@ Currently we have
     + 1. a dev docker environment management tool  
     + 2. a prod docker environment management tool (kinda :v)  
     but we still not have the:
-        + needed dockerfiles, dockercompose
+        + needed dockerfiles, dockercompose [] @Current 
         + init code  
         + test ?? 
 

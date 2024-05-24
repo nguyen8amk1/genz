@@ -1,0 +1,17 @@
+version: "3.8"
+services: 
+  api: 
+    image: nguyen8a/nalendar-api:latest
+    container_name: api_container
+    ports:
+      - '8000:8000'
+
+  app: 
+    image: nguyen8a/nalendar-app:latest
+    container_name: app_container
+    environment: 
+      - REACT_APP_API_URL=http://nalendar.online/api
+    ports:
+      - '80:80'
+
+    # # docker-compose -f prod-docker-compose.yml up
