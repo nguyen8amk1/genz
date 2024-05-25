@@ -59,10 +59,10 @@ write an argpargs system
     Migrate from 
         client/dev.sh --build -> genz frontend --build 
             -> wrap the old dev.h code with the genz frontend command [] 
-        Make the start command works @Current
+        Make the start command works [X]
             genz frontend:start  == client/dev.sh 
                 -> run and link 
-
+        Make the `build` command works [] @Current
 
 
 # DONE 
